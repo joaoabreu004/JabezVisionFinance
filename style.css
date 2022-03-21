@@ -21,17 +21,32 @@ header{
   width: 150px;
 }
 
+
+nav ul{
+  display: flex;
+}
+
 nav a{
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
+    padding-left: 2em;
 }
+
+.womanicon{
+  width: 40px;
+  height: 40px;
+}
+
+/* MAIN FIRST PART */
 
 .barra-contatos{
   display: flex;
   background-color: #bdb8b8;
   justify-content: center;
 }
+
+
 
 .barra-contatos ul{
   display: flex;
@@ -281,9 +296,69 @@ footer{
   padding: 0 0 0 6px;
 }
 
-/* PARTE MOBILE */
-@media screen and (max-width:780px) {
-  .caixa{
+/* MOBILE PART*/
+@media screen and (max-width:550px) {
+  .caixa .barra-contatos{
     width: auto;
   }
+
+
+  /* FIRST PART MAIN */
+  .barra-contatos ul{
+    flex-direction: column;
+  }
+
+  .barra-contatos li{
+    padding: 15px;
+  }
+
+  /* SECOND PART MAIN */
+
+  .carrosel{
+    display: flex;
+    justify-content: center;
+  }
+
+  .slideshow-container{
+    max-width: 100%;
+    position: relative;
+  }
+
+  /* THIRT PART MAIN */
+
+  .itens-video-inside{
+    display: block;
+    padding: 3em;
+  }
+
+  .video{
+    width: 300px;
+    height: 300px;
+  }
+
+  /* FORTH PART MAIN */
+
+  .service ul{
+    padding: 3em 0em;
+  }
+  
+  .service li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    padding: 20px 6px;
+    border-radius: 5%;
+  }
+
+  /* FIFTH PART MAIN */
+
+  .callofaction{
+    align-items: center;
+  }
+
+  .callofaction img{
+    width: 100%;
+  }
+
 }
