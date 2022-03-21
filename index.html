@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jabez Vision Finance</title>
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <div class="caixa">      
+      <h1><img src="img/logoone.png" alt=""></h1>
+        <nav>
+          <ul>
+            <li><a href="">SOCIAL MEDIA CHANELS</a></li>  
+          </ul>
+        </nav>
+    </div>
+  </header>
+  <main>
+
+    <section class="barra-contatos">
+      <ul>
+        <li><a href="">ABOUT US</a></li>
+        <div class="dropdown">
+        <li class="dropbtn"><a href="">ONLINE COURSES</a></li>
+          <div class="dropdown-content">
+            <a href="#">Flexible model to adapt to your routine.</a>
+            <a href="#">Content facilitated by market place.</a>
+            <a href="#">Create your Vision board.</a>
+          </div>
+        </div>  
+        <div class="dropdown">
+          <li class="dropbtn"><a href="">IN PERSON SERVICES</a></li>
+          <div class="dropdown-content">
+            <a href="#">Including personalized zoom meetings.</a>
+            <a href="#">In office - Massachusetts, Seminar or conference.</a>
+            <a href="#">In Church - We go to their church.</a>
+          </div>
+        </div>
+        <li><a href="">COMMUNITY</a></li>
+      </ul>
+   </section>
+
+    <section class="carrosel">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img class ="imagenscarrosel"src="img/carrousel1.jpg">
+        </div>
+          
+        <div class="mySlides fade">
+          <img class ="imagenscarrosel"src="img/carrousel2.jpg">
+        </div>
+          
+        <div class="mySlides fade">
+          <img class ="imagenscarrosel" src="img/controlfincancial.jpg">
+        </div>
+      </div>
+      <br>
+      <script>
+        var slideIndex = 0;
+        showSlides();
+          
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 5000); // Change image every 5 seconds
+          }
+      </script>
+    </section>
+
+   
+    <section class="video-inside">
+      <h2 class="titulos">How to create your financial vision boards!</h2>
+      
+      <div class="itens-video-inside">
+        <iframe width="700" height="300" src="https://www.youtube.com/embed/qutvTh2Rsn4" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+        <div class="legend">
+          <h1>What is a vision Board?</h1>
+          <p>"A vision board is a collage of pictures and phrases that depict things you want to accomplish in your future. It's basically a
+          visual representation of your hopes and dreams. Its purpose is to serve as inspiration and motivation for working toward your goals.<br>
+          Being able to see exactly what you want to accomplish gives you something to work toward as opposed to just letters on a page. 
+          Though there’s still value in writing your financial goals down, seeing is believing."</p>
+        </div>  
+      </div>
+    </section>
+
+    <section class="service">
+      <h2 class="titulos">SERVICE</h2>
+      <ul>
+        <li class="li-darkblue">
+          <h2 class="description">Create your Financial Vision Board.</h2>
+        </li>
+        <li class="li-green">
+          <h2 class="description">Learn how to Integrate your vision Board with Financial goals.</h2>
+        </li>
+        <li class="li-blue">
+          <h2 class="description">Learn how to Use your Financial Vision Board to invest for the future you dream.</h2>
+        </li>
+        <li class="li-pink">
+          <h2 class="description">All included with a promotional discount.</h2>
+        </li>
+      </ul>
+    </section>
+    
+    <!-- THIRD PART - MAIN  -->
+
+    <section class="callofaction">
+      <h2 class="titulos">KNOW OUR PLANS</h2>
+      <img src="img/womenreading.png" alt="">
+    </section>
+  </main>
+  <footer>
+    <section class="footer-itens">
+      <div class="container-fluid">
+        <ul>
+          <li><a href="">GET STARTED</a></li>
+          <li><a href="">CONTACT US</a></li>
+          <li><a href="">PODCAST</a></li>
+          <li><a href="">SOCIAL MEDIA PLATFORMS</a></li>
+        </ul>
+      </div>
+
+      
+      <div class="social-media">
+        <h2>FOLLOW US</h2>
+        <ul class="social-media-list">
+          <li><a href=""><img src="img/facebook.png" alt=""></a></li>
+          <li><a href=""><img src="img/instragram.png" alt=""></a></li>
+          <li><a href=""><img src="img/youtube.png" alt=""></a></li>
+          <li><a href=""><img src="img/twitter.png" alt=""></a></li>
+        </ul>
+      </div>
+    </section>  
+  </footer>
+</body>
+</html>
