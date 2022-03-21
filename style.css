@@ -2,11 +2,11 @@
     font-family: 'Roboto Slab', serif;
 }
 
+/* HEADER */
+
 header{
     background-color:#2a8518;
 }
-
-
 
 .caixa{
     display: flex;
@@ -16,6 +16,10 @@ header{
     font-family: 'Roboto Slab', serif;
 }
 
+.mainlogo{
+  max-width: 100%;
+  width: 150px;
+}
 
 nav a{
     color: #ffffff;
@@ -275,4 +279,11 @@ footer{
 .social-media h2{
   color: #ffffff;
   padding: 0 0 0 6px;
+}
+
+/* PARTE MOBILE */
+@media screen and (max-width:780px) {
+  .caixa{
+    width: auto;
+  }
 }
