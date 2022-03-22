@@ -14,6 +14,7 @@
 
 </head>
 <body>
+
   <header>
     <div class="caixa">       
       <h1><img class="mainlogo" src="logotwo.png" alt=""></h1>
@@ -29,7 +30,7 @@
 
     <section class="barra-contatos">
       <ul>
-        <li><a href="">ABOUT US</a></li>
+        <li><a href="">CONTACT US</a></li>
         <div class="dropdown">
         <li class="dropbtn"><a href="">ONLINE COURSES</a></li>
           <div class="dropdown-content">
@@ -50,74 +51,121 @@
       </ul>
    </section>
 
-    <section class="carrosel">
-      <div class="slideshow-container">
-        <div class="mySlides fade">
-          <img class ="imagenscarrosel"src="img/carrousel1.jpg">
-        </div>
-          
-        <div class="mySlides fade">
-          <img class ="imagenscarrosel"src="img/carrousel2.jpg">
-        </div>
-          
-        <div class="mySlides fade">
-          <img class ="imagenscarrosel" src="img/controlfincancial.jpg">
-        </div>
-      </div>
-      <br>
-      <script>
-        var slideIndex = 0;
-        showSlides();
-          
-        function showSlides() {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          for (i = 0; i < slides.length; i++) {
-           slides[i].style.display = "none";
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}
-            slides[slideIndex-1].style.display = "block";
-            setTimeout(showSlides, 5000); // Change image every 5 seconds
-          }
-      </script>
-    </section>
+   <section class="aboutus">
+     <h2 class="titulos">ABOUT US</h2>
+     <div class="itens-aboutus">
+      <img src="img/imgaboutus.jpg" alt="">
+      <p class="legend">Oh, that you would bless me and expand my territory, prayed Jabez to God." Like Jabez, we at JVF,  
+        want to help you be successful in planning and seeing your goals and aspirations come to fruition.
+        We offer you our services and product(s) for the sole purpose of seeing you realize your dreams.
+        Jabez Vision Finance seeks to empower women’s exposition to all their financial options.
+        We want women to flourish in their understanding and adaptation of financial acumen. Our services are 
+        designed to help our clients understand the “money language” in their language through vision board workshops. Our services are offered 
+        in-person and online for your convenience.
+      </p>
+     </div> 
+   </section>
 
-   
-    <section class="video-inside">
-      <h2 class="titulos">How to create your financial vision boards!</h2>
-      
-      <div class="itens-video-inside">
-        <iframe class="video" width="700" height="300" src="https://www.youtube.com/embed/qutvTh2Rsn4" title="YouTube video player" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-        <div class="legend">
-          <h1>What is a vision Board?</h1>
-          <p>"A vision board is a collage of pictures and phrases that depict things you want to accomplish in your future. It's basically a
-          visual representation of your hopes and dreams. Its purpose is to serve as inspiration and motivation for working toward your goals.<br>
-          Being able to see exactly what you want to accomplish gives you something to work toward as opposed to just letters on a page. 
-          Though there’s still value in writing your financial goals down, seeing is believing."</p>
-        </div>  
-      </div>
+    <section class="boardvision">
+        <h2 class="titulos">HOW TO CREATE YOUR FINANCIAL VISION BOARD: </h2>
+        <div class="itens-boardvision">
+          <h3 class="titulos-diferent">WHAT IS A VISION BOARD? </h3>
+          <p>
+            "A vision board is a collage of pictures and phrases that depict things you want to accomplish in your future. It's basically a visual representation of your hopes and dreams. Its purpose is to serve as inspiration and motivation for working toward your goals.       
+            Being able to see exactly what you want to accomplish gives you something to work toward as opposed to just letters on a page. Though there’s 
+            still value in writing your financial goals down, seeing is believing."
+          </p>
+          <div class="carrosel">
+            <div class="slideshow-container">
+              <div class="mySlides fade">
+                <img class ="imagenscarrosel"src="img/roda1.jpg">
+              </div>
+                
+              <div class="mySlides fade">
+                <img class ="imagenscarrosel"src="img/roda2.jpg">
+              </div>
+                
+              <div class="mySlides fade">
+                <img class ="imagenscarrosel" src="img/roda3.jpg">
+              </div>
+            </div>
+            <br>
+            <script>
+              var slideIndex = 0;
+              showSlides();
+                
+              function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                  slides[slideIndex-1].style.display = "block";
+                  setTimeout(showSlides, 5000); // Change image every 5 seconds
+                }
+            </script>
+          </div>
+        </div>
     </section>
-
+  
+    
     <section class="service">
-      <h2 class="titulos">SERVICE</h2>
+      <h2 class="titulos">SERVICES</h2>
       <ul>
         <li class="li-darkblue">
           <h2 class="description">Create your Financial Vision Board.</h2>
+          <ol class="benefits">
+            <li>We will help you how to write down your financial goals.</li>
+            <li>How creating your vision board is all about gathering supplies.</li>
+            <li>How to find and cut out images that represent your financial goals.</li>
+            <li>How to create your collage.</li>
+            <li>How to review your vision board daily.</li>
+          </ol>
         </li>
         <li class="li-green">
-          <h2 class="description">Learn how to Integrate your vision Board with Financial goals.</h2>
+          <h2 class="description">ONLINE SERVICES/ CLASSES <br>$500</h2>
+          <a href="" class="buttonforbuy">BUY NOW</a>
+          <hr>
+          <ol class="benefits">
+            <li>12 months access: 100% update course.</li>
+            <li>Videos lessons.</li>
+            <li>PDF classes.</li>
+            <li>How to create yout financial vision board.</li>
+            <li>Classes are offered in 4 Diferrent Languanges</li>
+            <li>25% cash discount</li>
+          </ol>
         </li>
         <li class="li-blue">
-          <h2 class="description">Learn how to Use your Financial Vision Board to invest for the future you dream.</h2>
+          <h2 class="description">IN PERSON SERVICES CLASSES<br>$1000</h2>
+          <a href="" class="buttonforbuy">BUY NOW</a>
+          <hr> 
+          <ol class="benefits">
+              <li>Networking - direct interaction with students and teachers.</li>
+              <li>Contact with professionals working in the market through congresses and lectures.</li>
+              <li>Different locations in New England</li>
+              <li>10-17 weeks, 8-15 hrs/week</li>
+              <li>Classes are offered in 4 Different Languages</li>
+              <li>How to create your financial vision board</li>
+              <li>25% cash discount</li>
+            </ol>
         </li>
         <li class="li-pink">
-          <h2 class="description">All included with a promotional discount.</h2>
+          <h2 class="description">PERSONAL COAHCHING<br>$35/HR</h2>
+          <a href="" class="buttonforbuy">BUY NOW</a>
+          <hr>
+          <ol class="benefits">
+            <li>Understand your spending habits.</li>
+            <li>Retirement planning.</li>
+            <li>Investment strategy.</li>
+            <li>Optimizing Social Security</li>
+            <li>Investment protection</li>
+            <li>25% cash discount for the first appointment.</li>
+          </ol>
         </li>
       </ul>
     </section>
-    
     <!-- THIRD PART - MAIN  -->
 
     <section class="callofaction">
@@ -130,7 +178,6 @@
       <div class="container-fluid">
         <ul>
           <li><a href="">GET STARTED</a></li>
-          <li><a href="">CONTACT US</a></li>
           <li><a href="">PODCAST</a></li>
           <li><a href="">SOCIAL MEDIA PLATFORMS</a></li>
         </ul>

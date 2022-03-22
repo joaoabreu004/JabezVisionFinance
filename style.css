@@ -42,7 +42,7 @@ nav a{
 
 .barra-contatos{
   display: flex;
-  background-color: #bdb8b8;
+  background-color: #ffa500;
   justify-content: center;
 }
 
@@ -65,22 +65,45 @@ nav a{
   flex-direction: row;
 }
 
-.video-inside{
-  align-items: center;
+.legend{
+  text-align: left;
+  line-height: 1.5;
+  margin: 15px;
+  font-size: 15px;
 }
 
-.texte-video{
+.aboutus{
+  padding: 3em;
+}
+
+.itens-aboutus{
   display: flex;
-  justify-content: center;
+  padding: 1em;
 }
 
-.video-inside p{
-  padding: 20px 0px;
+.titulos-diferent{
+  color: #000000;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
 }
+
+.itens-boardvision{
+  padding: 2em;
+}
+
+.itens-boardvision p{
+  text-align: center;
+  line-height: 1.5;
+  margin: 15px;
+  font-size: 15px;
+}
+
+
+
 
 .imagenscarrosel{
   max-width: 100%;
-  width: 500px;
   height: 500px;
   object-fit: contain;
 }
@@ -131,7 +154,6 @@ nav a{
 .carrosel{
   display: flex;
   justify-content: center;
-  padding: 20px 0px;
 }
 
 /* Slideshow container */
@@ -200,20 +222,9 @@ nav a{
   text-align: center;
 }
 
-
-.itens-video-inside{
-  display: flex;
-  padding: 3em;
+.service{
+  padding: 2em 0em;
 }
-
-.legend{
-  align-items: center;
-  text-align:left;
-  line-height: 1.5;
-  margin: 15px;
-  font-size: 15px;
-}
-
 
 .service ul{
   display: flex;
@@ -223,12 +234,12 @@ nav a{
 }
 
 .service li{
-  display: flex;
   align-items: center;
   padding: 0px 50px;
   box-sizing: border-box;
-  border-radius: 5%;
+  border-radius: 10px;
 }
+
 
 .li-darkblue{
   background-color: #180c4d;
@@ -255,13 +266,39 @@ nav a{
 }
 
 .description{
-  padding: 5px 0;
+  padding: 2em 0;
   color: #ffffff;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.benefits li{
+  padding: 1em 0;
+  color: #f1f1f1;
+  list-style-type: disc;
+  text-align: left;
 }
 
 /* THIRD PART MAIN */
 
+hr{
+  margin: 1em 0;
+}
 
+.buttonforbuy{
+  padding: 5px 6px;
+  color: #f1f1f1;
+  font-family: 'Roboto Slab', serif;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  background: #3f3f3f;
+}
+
+.buttonforbuy :hover{
+  background: #000000;
+}
 
 
 footer{
