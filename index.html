@@ -18,7 +18,7 @@
 
   <header>
     <div class="caixa">       
-      <h1><img class="mainlogo" src="logotwo.png" alt=""></h1>
+      <h1><img class="mainlogo" src="img/logotwo.png" alt=""></h1>
         <nav>
           <ul>
             <li><a href="">SIGN IN</a></li>  
@@ -55,7 +55,7 @@
    <section class="aboutus">
      <h2 class="titulos">ABOUT US</h2>
      <div class="itens-aboutus">
-      <img src="img/imgaboutus.jpg" alt="">
+      <img src="img/imgaboutus.jpg" class="imgaboutus" alt="">
       <p class="legend">Oh, that you would bless me and expand my territory, prayed Jabez to God." Like Jabez, we at JVF,  
         want to help you be successful in planning and seeing your goals and aspirations come to fruition.
         We offer you our services and product(s) for the sole purpose of seeing you realize your dreams.
@@ -166,47 +166,91 @@
         </li>
       </ul>
     </section>
-    <!-- THIRD PART - MAIN  -->
-
     <section class="callofaction">
       <h2 class="titulos">PROMOTION</h2>
-        <div clas="itenspromotion">
-          <!-- <img src="img/womenreading.png" alt=""> -->
-
-          <div class="row">
-            <div class="column">
-              <div class="card">
-                <h3>Card 1</h3>
-                <p>Some text</p>
-                <p>Some text</p>
+        <div class="d-flex justify-content-center">
+          <div class="card mb-3" style="max-width: 540px; padding: 2em; margin: 2em;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="img/capapromotion.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Save money!</h5>
+                  <p class="card-text">Group of 5 people will have 50% discount for online or in-person classes.</p>
+                  <button type="button" class="btn btn-danger" >BUY NOW</button>
+                </div>
               </div>
             </div>
           </div>
         </div>  
     </section>
 
-  </main>
-  <footer>
-    <section class="footer-itens">
-      <div class="container-fluid">
-        <ul>
-          <li><a href="">GET STARTED</a></li>
-          <li><a href="">PODCAST</a></li>
-          <li><a href="">SOCIAL MEDIA PLATFORMS</a></li>
-        </ul>
+    <section class="explanation">
+      <h2 class="titulos">SEE WHAT OUR STUDENTS HAVE TO SAY ABOUT OUR SERVICE: </h2>
+      <div>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="img/commentsone.jpg" class="d-block w-100" alt="...">
+           
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="img/commentstwo.jpg" class="d-block w-100" alt="...">
+             
+            </div>
+            <div class="carousel-item">
+              <img src="img/commentstree.jpg" class="d-block w-100" alt="...">
+             
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
+    </section>
 
-      
-      <div class="social-media">
-        <h2>FOLLOW US</h2>
-        <ul class="social-media-list">
-          <li><a href=""><img src="img/facebook.png" alt=""></a></li>
-          <li><a href=""><img src="img/instragram.png" alt=""></a></li>
-          <li><a href=""><img src="img/youtube.png" alt=""></a></li>
-          <li><a href=""><img src="img/twitter.png" alt=""></a></li>
-        </ul>
-      </div>
-    </section>  
-  </footer>
+
+    
+
+  </main>
+  
+    <footer>
+      <div class="d-flex justify-content-around">
+        <section class="footer-itens">
+          <div class="container-fluid">
+            <ul>
+              <li><a href="">GET STARTED</a></li>
+              <li><a href="">PODCAST</a></li>
+              <li><a href="">SOCIAL MEDIA PLATFORMS</a></li>
+            </ul>
+          </div>
+
+          
+          <div class="social-media">
+            
+            <h2>FOLLOW US</h2>
+            <ul class="social-media-list">
+              <li><a href=""><img src="img/facebook.png" alt=""></a></li>
+              <li><a href=""><img src="img/instragram.png" alt=""></a></li>
+              <li><a href=""><img src="img/youtube.png" alt=""></a></li>
+              <li><a href=""><img src="img/twitter.png" alt=""></a></li>
+            </ul>
+          </div>
+        </section>  
+      </div>  
+    </footer>
+ 
 </body>
 </html>

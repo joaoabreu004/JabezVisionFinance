@@ -305,46 +305,41 @@ hr{
   background: #000000;
 }
 
-.column {
-  float: left;
-  width: 25%;
+
+.card-body button{
+  margin: 1em;
+}
+.column{
+  display: flex;
+  flex-direction: row;
+}
+
+.explanation{
   padding: 3em 0;
 }
 
-/* Remove extra left and right margins, due to padding */
-.row {
-  display: flex;
-  justify-content: center;
-  margin: 0 -5px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive columns */
-
-/* Style the counter cards */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
   text-align: center;
-  background-color: #f1f1f1;
 }
 
+/* .card mb-3{
+  max-width: 540px;
+  padding: 2em;  
+  margin: 26em;
+} */
 
 footer{
-  background-color: #23135a;
+  display: flex;
+  background-color:#1d7151;
 }
 
 .footer-itens{
@@ -365,7 +360,7 @@ footer{
 
 
 .container-fluid a{
-  
+  font-weight: bold;
   text-decoration: none;
   color: white;
 }
@@ -373,14 +368,29 @@ footer{
 .social-media h2{
   color: #ffffff;
   padding: 0 0 0 6px;
+  font-weight: bold;
 }
 
 /* MOBILE PART*/
 @media screen and (max-width:550px) {
+
+  .titulos{
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .titulos-diferent {
+    color: #000000;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
   .caixa .barra-contatos{
     width: auto;
   }
-
 
   /* FIRST PART MAIN */
   .barra-contatos ul{
@@ -391,53 +401,33 @@ footer{
     padding: 15px;
   }
 
-  /* SECOND PART MAIN */
-
-  .carrosel{
-    display: flex;
-    justify-content: center;
+  .imgaboutus{
+    width: 100%;
+    height: 12rem;
   }
 
-  .slideshow-container{
-    max-width: 100%;
+  .itens-aboutus{
+    display: inline-block;
+    padding: 1em ;
+  }
+
+  .carousel-inner {
     position: relative;
+    width: 100%;
+    overflow: hidden;
   }
 
-  /* THIRT PART MAIN */
-
-  .itens-video-inside{
+  .service ul {
+    padding: 3em 0em;  
     display: block;
-    padding: 3em;
   }
 
-  .video{
-    width: 300px;
-    height: 300px;
-  }
-
-  /* FORTH PART MAIN */
-
-  .service ul{
-    padding: 3em 0em;
-  }
-  
-  .service li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .service li {
+    width: 100%;
     margin: 20px 0px;
     padding: 20px 6px;
-    border-radius: 5%;
+    border-radius: 5%; 
   }
 
-  /* FIFTH PART MAIN */
-
-  .callofaction{
-    align-items: center;
-  }
-
-  .callofaction img{
-    width: 100%;
-  }
 
 }
