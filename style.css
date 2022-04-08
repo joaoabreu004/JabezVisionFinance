@@ -1,11 +1,19 @@
-*{
-    font-family: 'Roboto Slab', serif;
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+
+@font-face {
+  font-family: 'icones';
+  src: url(icones.ttf);
+}
+
+*, body, nav a, .container-fluid a, .social-media h2{
+  font-family: 'Crete Round', serif;
 }
 
 /* HEADER */
 
 header{
     background-color:#1d7151;
+    font-family: 'Crete Round', serif;
 }
 
 .caixa{
@@ -21,6 +29,23 @@ header{
   width: 150px;
 }
 
+.caixa__navsearch{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 85%;
+  padding-top: 1em;
+  margin-right: -35px;;
+}
+
+
 
 nav ul{
   display: flex;
@@ -30,6 +55,7 @@ nav a{
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
+    font-size: 12px;
     padding-left: 2em;
 }
 
@@ -120,6 +146,10 @@ nav a{
 .dropdown {
   position: relative;
   display: inline-block;
+}
+
+.dropdown--ativo{
+  transition: 0.2s;
 }
 
 
@@ -288,6 +318,65 @@ nav a{
 
 /* THIRD PART MAIN */
 
+
+/* ANALISE */
+.callofaction{
+  display: flex;
+  height: 60%;
+  padding: 2em;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.containers{
+  display: flex;
+  background-color: #180c4d;
+}
+.card__container{
+  height: 40%;
+  background-color: #2a2738;
+  padding: 25%;
+  width: 80vw;
+  display: grid;
+  align-content: center;
+}
+
+.containers__womanimg{
+  height: 322px;
+  width: 603px;
+}
+
+.container__texto{
+  text-align: center;
+  padding: 2em;
+  line-height: 1.5;
+}
+
+.title__doation{
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.descripitions__doation{
+  color: #ffffff;
+}
+
+.descripitions__doation strong{
+  color: #ffa500;
+  font-weight: bold;
+}
+
+.btn-warning {
+  color: #000;
+  background-color: #ffc107;
+  border-color: #ffc107;
+  margin-top: 1em;
+}
+
+
+
+
 hr{
   margin: 1em 0;
 }
@@ -295,12 +384,13 @@ hr{
 .buttonforbuy{
   padding: 5px 6px;
   color: #f1f1f1;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Crete Round', serif;
   border-radius: 4px;
   text-decoration: none;
   font-weight: 600;
   cursor: pointer;
   background: #3f3f3f;
+
 }
 
 .buttonforbuy :hover{
@@ -342,6 +432,7 @@ hr{
 footer{
   display: flex;
   background-color:#1d7151;
+  font-family: 'Crete Round', serif;
 }
 
 .footer-itens{
@@ -374,8 +465,31 @@ footer{
 }
 
 /* MOBILE PART*/
-@media screen and (max-width:550px) {
+@media screen and (max-width: 550px) {
 
+  nav a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 9px;
+    padding-left: 2em;
+  }
+
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 97%;
+    padding-top: 1em;
+    margin-right: -35px;
+  }
+
+  .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    margin-left: -7px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
   .titulos{
     color: #000000;
     font-size: 15px;
@@ -388,13 +502,22 @@ footer{
     font-size: 12px;
     font-weight: bold;
     text-align: center;
-}
+  }
 
   .caixa .barra-contatos{
     width: auto;
   }
 
   /* FIRST PART MAIN */
+
+  .legend {
+    padding: 2em;
+    text-align: center;
+    line-height: 1.5;
+    margin: 15px;
+    font-size: 15px;
+  }
+
   .barra-contatos ul{
     flex-direction: column;
   }
@@ -433,5 +556,21 @@ footer{
 
   hr{
     margin: 20px 25px;
+  }
+
+  .containers__womanimg {
+    height: 322px;
+    width: 310px;
+}
+  
+.container__img {
+  display: flex;
+  padding: 2em 1em 0;
+  justify-content: center;
+}
+  .containers {
+    display: block;
+    background-color: #180c4d;
+    margin: 15px;
   }
 }
